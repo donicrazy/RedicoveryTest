@@ -5,10 +5,6 @@ import { connect } from 'react-redux';
 import { compose } from 'redux';
 import { updateRect } from '../redux/action';
 
-var updateNode = selection => {
-    selection.attr("transform", d => "translate(" + d.x + "," + d.y + ")");
-};
-
 var drag = d3.drag()
     .subject(d => {
         return d;
